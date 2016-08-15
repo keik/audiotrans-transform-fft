@@ -13,7 +13,7 @@ logger.addHandler(handler)
 
 class FFTTransform(Transform):
 
-    def __init__(self, argv):
+    def __init__(self, argv=[]):
         parser = ArgumentParser(
             prog=__package__,
             description="""Transform module for FFT""",

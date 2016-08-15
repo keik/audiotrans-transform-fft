@@ -6,6 +6,12 @@ import numpy as np
 from audiotrans_transform_fft import FFTTransform
 
 
+def test_accept_arg_of_verbose():
+
+    FFTTransform(['-v'])  # no error would be raised
+    assert True
+
+
 def test_accept_1D_float_array_and_return_1D_complex_array():
 
     tr = FFTTransform()

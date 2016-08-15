@@ -8,10 +8,6 @@ install_requires = [
     'audiotrans'
 ]
 
-dependency_links = [
-    'https://github.com/keik/audiotrans.git'
-]
-
 setup(name='audiotrans-transform-fft',
       version='0.0.1.dev0',
       description="""audiotrans transform module to FFT""",
@@ -31,5 +27,4 @@ setup(name='audiotrans-transform-fft',
           'Programming Language :: Python :: 3.5',
       ],
       packages=find_packages(),
-      install_requires=install_requires,
-      dependency_links=dependency_links)
+      install_requires=install_requires)

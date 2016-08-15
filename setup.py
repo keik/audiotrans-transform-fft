@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import audiotrans_transform_fft
 from setuptools import setup, find_packages
 
 install_requires = [
@@ -9,11 +8,28 @@ install_requires = [
     'audiotrans'
 ]
 
+dependency_links = [
+    'https://github.com/keik/audiotrans.git'
+]
+
 setup(name='audiotrans-transform-fft',
-      version=audiotrans_transform_fft.__version__,
-      description=audiotrans_transform_fft.__desc__,
-      author=audiotrans_transform_fft.__author__,
-      author_email=audiotrans_transform_fft.__author_email__,
-      url=audiotrans_transform_fft.__url__,
+      version='0.0.1.dev0',
+      description="""audiotrans transform module to FFT""",
+      author='keik',
+      author_email='k4t0.kei@gmail.com',
+      url='https://github.com/keik/audiotrans-transform-fft',
+      license='MIT',
+      classifiers=[
+          'License :: OSI Approved :: MIT License',
+          'Intended Audience :: Developers',
+          'Topic :: Multimedia :: Sound/Audio :: Conversion',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
+      ],
       packages=find_packages(),
-      install_requires=install_requires)
+      install_requires=install_requires,
+      dependency_links=dependency_links)

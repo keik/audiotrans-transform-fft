@@ -30,6 +30,8 @@ class FFTTransform(Transform):
             logger.info('Start as verbose mode')
 
     def transform(self, data):
-        ndata = np.fft.fft(data)
-        logger.info('FFT from {} form to {} form'.format(data.shape, ndata.shape))
-        return ndata
+        dlen = len(data) // 2 + 1
+        d = np.empty(dlen, dtype=np.complex64)
+        d[:] = np.fft.fft(data)[0:dlen]
+        logger.info('FFT from {} form to {} form'.format(data.shape, d.shape))
+        return d

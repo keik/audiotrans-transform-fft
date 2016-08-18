@@ -35,3 +35,15 @@ optional arguments:
   -h, --help     show this help message and exit
   -v, --verbose  Run as verbose mode
 ```
+
+
+## Test
+
+```
+make test
+```
+
+
+## License
+
+MIT (c) keik

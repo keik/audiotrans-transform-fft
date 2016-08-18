@@ -27,9 +27,9 @@ audiotrans <filepath> -t fft -v -c spec
 Options of the below is available through subarg (like `[ foo -h ]`)
 
 ```
-usage: audiotrans_transform_fft [-h] [-v]
+usage: fft [-h] [-v]
 
-Transform module for FFT
+audiotrans transform module for FFT
 
 optional arguments:
   -h, --help     show this help message and exit

@@ -15,8 +15,8 @@ class FFTTransform(Transform):
 
     def __init__(self, argv=[]):
         parser = ArgumentParser(
-            prog=__package__,
-            description="""Transform module for FFT""",
+            prog='fft',
+            description="""audiotrans transform module for FFT""",
             formatter_class=RawTextHelpFormatter)
 
         parser.add_argument('-v', '--verbose', dest='verbose',

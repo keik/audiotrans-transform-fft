@@ -7,3 +7,31 @@
 [![Coverage Status](https://img.shields.io/coveralls/keik/audiotrans-transform-fft.svg?style=flat-square)](https://coveralls.io/github/keik/audiotrans-transform-fft)
 
 [audiotrans](https://github.com/keik/audiotrans) transform module to FFT
+
+
+## Installation
+
+```
+pip install audiotrans-transform-fft
+```
+
+
+## Usage
+
+As `audiotrans` transform module, like
+
+```
+audiotrans <filepath> -t fft -v -c spec
+```
+
+Options of the below is available through subarg (like `[ foo -h ]`)
+
+```
+usage: audiotrans_transform_fft [-h] [-v]
+
+Transform module for FFT
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose  Run as verbose mode
+```
